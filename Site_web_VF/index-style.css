@@ -1,0 +1,283 @@
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif; /* Set the font family for the entire page */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Set a light gray background color */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange flex items in a column */
+    min-height: 100vh; /* Ensure the body takes up at least 100% of the viewport height */
+}
+
+/* Header Styles */
+header {
+    background-color: #06668C; /* Set a dark blue background color for the header */
+    color: white; /* Set the text color to white */
+    padding: 10px 0; /* Add vertical padding */
+    width: 100%; /* Make the header span the full width of the viewport */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+    justify-content: space-between; /* Distribute space between flex items */
+    align-items: center; /* Align items vertically in the center */
+    position: relative; /* Position the header relative to its normal position */
+}
+
+header .menu-burger {
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    color: white; /* Set the text color to white */
+    font-size: 24px; /* Increase the font size */
+    margin-left: 20px; /* Add left margin */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+header ul.menu-content {
+    list-style-type: none; /* Remove default list style */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: none; /* Hide the menu content by default */
+    flex-direction: column; /* Arrange flex items in a column */
+    position: absolute; /* Position the menu absolutely */
+    top: 50px; /* Position the menu 50px from the top */
+    left: 0; /* Align the menu to the left */
+    right: 0; /* Align the menu to the right */
+    background-color: rgba(0, 0, 0, 0.7); /* Set a semi-transparent black background color */
+    border-radius: 5px; /* Add rounded corners */
+    z-index: 1000; /* Ensure the menu is on top of other elements */
+    width: fit-content; /* Make the menu width fit its content */
+}
+
+header ul.menu-content li {
+    margin: 0; /* Remove default margin */
+}
+
+header ul.menu-content li a {
+    color: white; /* Set the text color to white */
+    text-decoration: none; /* Remove default text decoration */
+    padding: 10px 20px; /* Add padding */
+    display: block; /* Make the anchor tag a block element */
+}
+
+header ul.menu-content li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Change background color on hover */
+}
+
+header select, header input[type="text"] {
+    margin: 5px; /* Add margin */
+    padding: 5px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+/* User Info Styles */
+.user-info {
+    text-align: right; /* Align text to the right */
+    margin-right: 20px; /* Add right margin */
+}
+
+.user-info p {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center align text */
+}
+
+.logout-button {
+    display: block; /* Make the button a block element */
+    margin-top: 5px; /* Add top margin */
+    background: none; /* Remove default background */
+    border: none; /* Remove default border */
+    color: red; /* Set the text color to red */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    text-align: center; /* Center align text */
+}
+
+/* Main Container Styles */
+#mainContainer {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space between flex items */
+    padding: 20px; /* Add padding */
+}
+
+#bpContainer {
+    width: 60%; /* Set the width to 60% */
+    max-height: 450px; /* Set the maximum height */
+    overflow-y: auto; /* Add vertical scrolling if needed */
+}
+
+#logsContainer {
+    width: 35%; /* Set the width to 35% */
+    max-height: 250px; /* Set the maximum height */
+    overflow-y: auto; /* Add vertical scrolling if needed */
+    background-color: #f9f9f9; /* Set a light background color */
+    border: 1px solid #ddd; /* Add a light border */
+    border-radius: 5px; /* Add rounded corners */
+    padding: 10px; /* Add padding */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+/* Best Practices List Styles */
+#bpList {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange flex items in a column */
+    gap: 20px; /* Add space between flex items */
+}
+
+.bp-card {
+    background-color: #fff; /* Set a white background color */
+    border: 1px solid #ddd; /* Add a light border */
+    border-radius: 5px; /* Add rounded corners */
+    padding: 20px; /* Add padding */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Add a light shadow */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange flex items in a column */
+    justify-content: space-between; /* Distribute space between flex items */
+    margin-bottom: 10px; /* Add bottom margin */
+}
+
+.bp-row {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space between flex items */
+}
+
+.bp-column {
+    flex: 1; /* Allow the column to grow */
+    margin: 0 10px; /* Add horizontal margin */
+}
+
+.bp-column p {
+    margin: 5px 0 0; /* Add top margin and remove bottom margin */
+}
+
+.checkbox-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align flex items */
+    align-items: center; /* Align items vertically in the center */
+    margin-top: 10px; /* Add top margin */
+}
+
+.checkbox-container input[type="checkbox"] {
+    transform: scale(1.5); /* Increase the size of the checkbox */
+}
+
+/* Form Styles */
+form {
+    margin: 20px; /* Add margin */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+    gap: 10px; /* Add space between flex items */
+}
+
+form button, form select {
+    padding: 10px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+form button {
+    background-color: #06668C; /* Set a dark blue background color */
+    color: white; /* Set the text color to white */
+}
+
+form button:last-of-type {
+    background-color: #06668C; /* Set a dark blue background color */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Make the table span the full width of its container */
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Add a light border */
+}
+
+th, td {
+    padding: 8px; /* Add padding */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #f2f2f2; /* Set a light gray background color */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed; /* Fix the modal's position */
+    z-index: 1; /* Ensure the modal is on top of other elements */
+    left: 0; /* Align the modal to the left */
+    top: 0; /* Align the modal to the top */
+    width: 100%; /* Make the modal span the full width of the viewport */
+    height: 100%; /* Make the modal span the full height of the viewport */
+    overflow: auto; /* Add scrolling if needed */
+    background-color: rgba(0,0,0,0.4); /* Set a semi-transparent black background color */
+}
+
+.modal-content {
+    background-color: #fefefe; /* Set a white background color */
+    margin: 4% auto; /* Center the modal vertically and horizontally */
+    padding: 20px; /* Add padding */
+    border: 1px solid #888; /* Add a light border */
+    width: 80%; /* Set the width to 80% */
+    max-width: 600px; /* Set a maximum width */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Add a shadow */
+}
+
+.close {
+    color: #aaa; /* Set the text color to light gray */
+    float: right; /* Float the element to the right */
+    font-size: 28px; /* Increase the font size */
+    font-weight: bold; /* Make the font bold */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Change the text color to black on hover and focus */
+    text-decoration: none; /* Remove text decoration */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+/* Additional styles for modal forms */
+#addProgramForm label {
+    display: block; /* Make the label a block element */
+    margin-top: 10px; /* Add top margin */
+}
+
+#addProgramForm input[type="text"],
+#addProgramForm select {
+    width: 100%; /* Make the input and select elements span the full width */
+    padding: 10px; /* Add padding */
+    margin-top: 5px; /* Add top margin */
+    border: 1px solid #ddd; /* Add a light border */
+    border-radius: 5px; /* Add rounded corners */
+}
+
+#addProgramForm button {
+    margin-top: 15px; /* Add top margin */
+    background-color: #06668C; /* Set a dark blue background color */
+    color: white; /* Set the text color to white */
+    padding: 10px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+#addProgramForm button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+}
+/* Additional styles */
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+    gap: 10px;
+}

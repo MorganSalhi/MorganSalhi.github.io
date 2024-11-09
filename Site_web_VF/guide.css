@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif; /* Set the font family for the entire page */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Set a light gray background color */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange flex items in a column */
+    min-height: 100vh; /* Ensure the body takes up at least 100% of the viewport height */
+}
+
+header {
+    background-color: #06668C; /* Set a dark blue background color for the header */
+    color: white; /* Set the text color to white */
+    padding: 10px 0; /* Add vertical padding */
+    width: 100%; /* Make the header span the full width of the viewport */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+    justify-content: space-between; /* Distribute space between flex items */
+    align-items: center; /* Align items vertically in the center */
+    position: relative; /* Position the header relative to its normal position */
+}
+
+header .menu-burger {
+    background: none; /* Remove default button background */
+    border: none; /* Remove default button border */
+    color: white; /* Set the text color to white */
+    font-size: 24px; /* Increase the font size */
+    margin-left: 20px; /* Add left margin */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+header ul.menu-content {
+    list-style-type: none; /* Remove default list style */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: none; /* Hide the menu content by default */
+    flex-direction: column; /* Arrange flex items in a column */
+    position: absolute; /* Position the menu absolutely */
+    top: 50px; /* Position the menu 50px from the top */
+    left: 0; /* Align the menu to the left */
+    right: 0; /* Align the menu to the right */
+    background-color: rgba(0, 0, 0, 0.7); /* Set a semi-transparent black background color */
+    border-radius: 5px; /* Add rounded corners */
+    z-index: 1000; /* Ensure the menu is on top of other elements */
+    width: fit-content; /* Make the menu width fit its content */
+}
+
+header ul.menu-content li {
+    margin: 0; /* Remove default margin */
+}
+
+header ul.menu-content li a {
+    color: white; /* Set the text color to white */
+    text-decoration: none; /* Remove default text decoration */
+    padding: 10px 20px; /* Add padding */
+    display: block; /* Make the anchor tag a block element */
+}
+
+header ul.menu-content li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Change background color on hover */
+}
+
+.user-info {
+    text-align: right; /* Align text to the right */
+    margin-right: 20px; /* Add right margin */
+}
+
+.user-info p {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center align text */
+}
+
+.logout-button {
+    display: block; /* Make the button a block element */
+    margin-top: 5px; /* Add top margin */
+    background: none; /* Remove default background */
+    border: none; /* Remove default border */
+    color: red; /* Set the text color to red */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    text-align: center; /* Center align text */
+}
+
+.container {
+    padding: 20px; /* Add padding */
+    margin: 0 auto; /* Center the container */
+    max-width: 800px; /* Set a maximum width */
+}
+ 
+h1 {
+    margin-bottom: 20px; /* Add bottom margin */
+    text-align: center; /* Center align the text */
+}
+
+h2 {
+    margin-top: 20px; /* Add top margin */
+    color: #333; /* Set the text color to dark gray */
+}
+
+p {
+    margin-bottom: 10px; /* Add bottom margin */
+}
+
+.back-button {
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove default border */
+    background: #06668C; /* Set a dark blue background color */
+    color: #fff; /* Set the text color to white */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    position: fixed; /* Fix the button position */
+    bottom: 20px; /* Position the button 20px from the bottom */
+    left: 20px; /* Position the button 20px from the left */
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+}
+
+.error {
+    color: red; /* Set the text color to red */
+    text-align: center; /* Center align the text */
+}

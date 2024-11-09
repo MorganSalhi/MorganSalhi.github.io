@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #06668C;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .menu-burger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+    flex: 1;
+    text-align: left;
+}
+
+header ul.menu-content {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    z-index: 1000;
+    width: fit-content;
+}
+
+header ul.menu-content li {
+    margin: 0;
+}
+
+header ul.menu-content li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+header ul.menu-content li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.user-info {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.user-info p {
+    margin: 0;
+    text-align: right;
+}
+
+.logout-button {
+    display: block;
+    margin-top: 5px;
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    text-align: right;
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 500px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+select, 
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #06668C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.back-button {
+    padding: 10px 20px;
+    border: none;
+    background: #06668C;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: auto;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}

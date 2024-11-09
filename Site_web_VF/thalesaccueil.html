@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Thales</title>
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <style>
+      /* General styles */
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          background-image: url('image-accueil.png'); /* Corrected syntax */
+          background-size: cover; /* Ensure the image covers the entire background */
+          background-repeat: no-repeat; /* Prevent repeating the image */
+          background-position: center; /* Center the background image */
+      }
+      
+      .background1 {
+          /* Ensure the background covers the entire element */
+          background-size: cover;
+      }
+      
+      header {
+          width: 100%;
+          padding: 10px 0;
+          color: white;
+          text-align: center; 
+          position: relative;
+      }
+      
+      .text-container {
+          text-align: center;
+          margin: 20px 0;
+          color: white;
+          font-size: 24px;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add text shadow for readability */
+      }
+      
+      .normal-text {
+          font-size: 24px;
+      }
+      
+      .textcolorwhite {
+          color: white;
+      }
+      
+      /* Login container styles */
+      .login-container {
+          background: #fff; /* White background */
+          padding: 20px; /* Padding inside the container */
+          border-radius: 5px; /* Rounded corners */
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+          width: 100%;
+          max-width: 400px; /* Max width of the container */
+          text-align: center; /* Centered text */
+          border: 2px solid #06668C; /* Add a blue border */
+      }
+      
+      .login-container h2 {
+          margin-bottom: 20px; /* Space below the heading */
+          color: #06668C; /* Dark blue color */
+      }
+      
+      .input-group {
+          margin-bottom: 15px; /* Space below each input group */
+          text-align: left; /* Left aligned text */
+      }
+      
+      .input-group label {
+          display: block; /* Block display for labels */
+          margin-bottom: 5px; /* Space below the label */
+          color: #333; /* Dark text color */
+      }
+      
+      .input-group input {
+          width: 100%; /* Full width */
+          padding: 10px; /* Padding inside the input */
+          border: 1px solid #06668C; /* blue border */
+          border-radius: 5px; /* Rounded corners */
+          box-sizing: border-box; /* Include padding and border in element's total width and height */
+      }
+      
+      button[type="submit"] {
+          padding: 10px 20px; /* Padding inside the button */
+          border: none; /* No border */
+          background: #06668C; /* Dark blue background */
+          color: #fff; /* White text */
+          border-radius: 5px; /* Rounded corners */
+          cursor: pointer; /* Pointer cursor on hover */
+          font-size: 16px; /* Font size */
+      }
+      
+      button[type="submit"]:hover {
+          background-color: #0056b3; /* Darker blue on hover */
+      }
+      
+      /* Error message styles */
+      .error-message {
+          color: red;
+          font-weight: bold;
+          margin-bottom: 15px;
+      }
+    </style>
+</head>
+<body class="background1">
+    <header>
+        <!-- Header content can go here -->
+    </header>
+    <div class="text-container normal-text textcolorwhite">
+        Bienvenue sur l'application<br><span class="textcolorwhite">Checklist </span> <!-- Welcome message -->
+    </div>
+
+    <div class="login-container">
+        <div id="error-container" class="error-message"></div> <!-- Error message container -->
+        <form action="login.php" method="post"> <!-- Form to handle login -->
+            <h2>Connexion</h2> <!-- Login title -->
+            <div class="input-group">
+                <label for="username">Nom d'utilisateur:</label> <!-- Username label -->
+                <input type="text" id="username" name="username" required> <!-- Username input field -->
+            </div>
+            <div class="input-group">
+                <label for="password">Mot de passe:</label> <!-- Password label -->
+                <input type="password" id="password" name="password" required> <!-- Password input field -->
+            </div>
+            <button type="submit">Se connecter</button> <!-- Submit button -->
+        </form>
+    </div>
+
+    <script>
+        // Function to get URL parameters
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Display error message if present
+        var errorMessage = getUrlParameter('error');
+        if (errorMessage) {
+            document.getElementById('error-container').innerText = errorMessage;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* Background styles */
+.background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: auto;
+}
+
+.background1 {
+    background-image: url("thalesimages/earthsky.jpg");
+}
+
+/* White bar styles */
+.white-bar { 
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.white-bar img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: 120px;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header, form, and table container styles */
+header, form, table {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+} 
+
+/* Header styles */
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+form label {
+    flex-basis: 100%;
+    margin-top: 10px;
+}
+
+form input, form select, form button {
+    padding: 8px;
+    width: calc(50% - 10px);
+    margin-top: 5px;
+}
+
+form button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #004494;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f8f8;
+}
+
+/* Error message styles */
+.error {
+    color: #d9534f;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Success message styles */
+.success {
+    color: #5cb85c;
+    text-align: center;
+    padding: 10px;
+}
+
+/* White text color */
+.textcolorwhite { 
+    color: white;
+}

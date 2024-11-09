@@ -1,0 +1,185 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif; /* Sets the font family to Arial */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background-color: #f4f4f4; /* Sets a light gray background color */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Stacks children vertically */
+    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+}
+
+/* Styling for the header */
+header { 
+    background-color: #06668C; /* Sets the background color to dark blue */
+    color: white; /* Sets the text color to white */
+    padding: 10px 0; /* Adds vertical padding */
+    width: 100%; /* Ensures the header spans the full width */
+    display: flex; /* Uses flexbox for layout */
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center; /* Aligns items vertically in the center */
+    position: relative; /* Sets the position to relative for positioning child elements */
+}
+
+/* Styling for the menu burger button */
+header .menu-burger {
+    background: none; /* Removes background */
+    border: none; /* Removes border */
+    color: white; /* Sets the text color to white */
+    font-size: 24px; /* Sets the font size */
+    margin-left: 20px; /* Adds left margin */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* Styling for the menu content */
+header ul.menu-content {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: none; /* Hides the menu content by default */
+    flex-direction: column; /* Stacks menu items vertically */
+    position: absolute; /* Positions the menu absolutely */
+    top: 50px; /* Positions the menu 50px from the top */
+    left: 0; /* Aligns the menu to the left */
+    right: 0; /* Aligns the menu to the right */
+    background-color: rgba(0, 0, 0, 0.7); /* Sets a semi-transparent black background */
+    border-radius: 5px; /* Rounds the corners */
+    z-index: 1000; /* Places the menu above other elements */
+    width: fit-content; /* Shrinks the menu to fit its content */
+}
+
+/* Styling for individual menu items */
+header ul.menu-content li {
+    margin: 0; /* Removes default margin */
+}
+
+/* Styling for menu links */
+header ul.menu-content li a {
+    color: white; /* Sets the text color to white */
+    text-decoration: none; /* Removes underline */
+    padding: 10px 20px; /* Adds padding */
+    display: block; /* Makes the link a block element */
+}
+
+/* Hover effect for menu links */
+header ul.menu-content li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Changes background color on hover */
+}
+
+/* Styling for user info section */
+.user-info {
+    text-align: right; /* Aligns text to the right */
+    margin-right: 20px; /* Adds right margin */
+}
+
+/* Styling for user info paragraphs */
+.user-info p {
+    margin: 0; /* Removes default margin */
+    text-align: center; /* Centers the text */
+}
+
+/* Styling for the logout button */
+.logout-button {
+    display: block; /* Makes the button a block element */
+    margin-top: 5px; /* Adds top margin */
+    background: none; /* Removes background */
+    border: none; /* Removes border */
+    color: red; /* Sets the text color to red */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    text-align: center; /* Centers the text */
+}
+
+/* Styling for the main container */
+.container {
+    padding: 20px; /* Adds padding */
+    margin: 0 auto; /* Centers the container horizontally */
+    max-width: 800px; /* Sets a maximum width */
+    text-align: center; /* Centers the content within the container */
+}
+
+/* Styling for the form */
+form {
+    margin: 0 auto; /* Centers the form horizontally */
+    max-width: 500px; /* Sets a maximum width */
+    text-align: center; /* Centers the form content */
+}
+
+/* Styling for labels */
+label {
+    display: block; /* Makes the label a block element */
+    margin-bottom: 10px; /* Adds bottom margin */
+    text-align: center; /* Centers the labels */
+}
+
+/* Styling for text inputs and textareas */
+input[type="text"],
+textarea {
+    width: 100%; /* Sets the width to 100% */
+    padding: 10px; /* Adds padding */
+    margin-bottom: 10px; /* Adds bottom margin */
+    border: 1px solid #ccc; /* Sets a light gray border */
+    border-radius: 5px; /* Rounds the corners */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    text-align: left; /* Aligns input text to the left */
+}
+
+/* Styling for submit buttons */
+input[type="submit"] {
+    padding: 10px 20px; /* Adds padding */
+    border: none; /* Removes border */
+    background: #06668C; /* Sets background color to dark blue */
+    color: #fff; /* Sets text color to white */
+    border-radius: 5px; /* Rounds the corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* Hover effect for submit buttons */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Changes background color on hover */
+}
+
+/* Styling for inline fields container */
+.inline-fields {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: space-between; /* Distributes space between items */
+    gap: 10px; /* Adds space between fieldsets */
+}
+
+/* Styling for fieldsets */
+fieldset {
+    margin-bottom: 10px; /* Adds bottom margin */
+    flex: 1; /* Allows the fieldset to grow and fill available space */
+    padding: 10px; /* Adds padding */
+}
+
+/* Styling for option items and best practice items */
+.option-item, .bp-item {
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Aligns items vertically in the center */
+    margin: 10px 0; /* Adds vertical margin */
+}
+
+/* Styling for the back button */
+.back-button {
+    padding: 10px 20px; /* Adds padding */
+    border: none; /* Removes border */
+    background: #06668C; /* Sets background color to dark blue */
+    color: #fff; /* Sets text color to white */
+    border-radius: 5px; /* Rounds the corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    position: fixed; /* Fixes the button's position */
+    bottom: 20px; /* Positions the button 20px from the bottom */
+    left: 20px; /* Positions the button 20px from the left */
+}
+
+/* Hover effect for the back button */
+.back-button:hover {
+    background-color: #0056b3; /* Changes background color on hover */
+}
+
+/* Styling for error messages */
+.error {
+    color: red; /* Sets text color to red */
+    text-align: center; /* Centers the text */
+}

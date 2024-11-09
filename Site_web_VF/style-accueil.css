@@ -1,0 +1,54 @@
+/* Remove default margin and padding from body and ul */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation menu styles */
+nav ul {
+    list-style-type: none; /* Remove default list style */
+    background-color: #333; /* Dark background color */
+    text-align: center; /* Center align text */
+}
+
+nav ul li {
+    display: inline; /* Display list items in a row */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text color */
+    padding: 15px 20px; /* Padding around links */
+    display: inline-block; /* Allow padding to take effect */
+}
+
+/* Sidebar menu content styles */
+aside .menu-content {
+    display: none; /* Hidden by default */
+    background-color: #f4f4f4; /* Light grey background color */
+    position: absolute; /* Position absolutely */
+    width: 200px; /* Set width */
+    border-right: 1px solid #ccc; /* Right border */
+}
+
+aside .menu-content li {
+    list-style-type: none; /* Remove default list style */
+    border-bottom: 1px solid #ccc; /* Bottom border */
+}
+
+aside .menu-content li a { 
+    padding: 10px; /* Padding around links */
+    display: block; /* Display as block for full width clickable area */
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Black text color */
+}
+
+/* Burger menu button styles */
+.menu-burger {
+    font-size: 24px; /* Large font size */
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px; /* Padding around button */
+    margin: 10px; /* Margin around button */
+}

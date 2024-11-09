@@ -1,0 +1,152 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #06668C;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header .menu-burger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Dropdown menu styles */
+header ul.menu-content {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    z-index: 1000;
+    width: fit-content;
+}
+
+header ul.menu-content li {
+    margin: 0;
+}
+
+header ul.menu-content li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+header ul.menu-content li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* User info section styles */
+.user-info {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.user-info p {
+    margin: 0;
+    text-align: center;
+}
+
+.logout-button {
+    display: block;
+    margin-top: 5px;
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Main container styles */
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 5%; /* Added margin for spacing from top */
+}
+
+/* Form styles */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Text input field styles */
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Submit button and back button styles */
+input[type="submit"], .back-button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    background: #06668C;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, .back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Back button specific styles */
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* Message paragraph styles */
+p.message {
+    margin-top: 0;
+    padding: 10px;
+    background: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+}
